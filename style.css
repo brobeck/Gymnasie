@@ -1,0 +1,88 @@
+/* Mobile First */
+
+*{
+	font-family:"century gothic";
+	box-sizing:border-box;
+	margin:0px;
+	
+}
+
+header{
+	width:100%;
+	height:300px;
+	background-image: url("bilder//astronaut_moon_cropped.jpg");
+	background-position: center;
+	
+}
+
+#logga{
+	height:50%;
+	margin:auto;
+}
+
+
+#menuBar{
+	position: relative;
+	height:100%;
+	width:100%;
+}
+
+#menu{
+	display:flex;
+	position:absolute;
+	bottom:0;	
+	padding:0;
+	width:100%;
+	border:1px solid black;
+}
+
+#menu li{
+	width:100%;
+	 background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1) ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1) ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1) ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1) ); /* Standard syntax */
+	height:80px;
+	list-style:none;
+	padding:20px;
+	text-align:center;
+	
+}
+
+#menu li:hover{
+	background: -webkit-linear-gradient(rgba(211, 211, 211, 0.5), rgba(211, 211, 211, 1) ); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgba(211, 211, 211, 0.5), rgba(211, 211, 211, 1) ); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgba(211, 211, 211, 0.5), rgba(211, 211, 211, 1) ); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgba(211, 211, 211, 0.5), rgba(211, 211, 211, 1) ); /* Standard syntax */
+	
+}
+
+.content{
+	height:500px;
+	background:#3d3d3d;
+	border:1px solid black;
+	color:#fff;
+	padding:10px;
+}
+
+.contentImage{
+	height:200px;
+	background-image: url("bilder//content_1_cropped.jpg");
+	background-position: center;
+}
+
+/* PC */
+@media(min-width:600px){
+	
+	#main{
+		margin:auto;
+	}
+	
+	.content{
+		width:100%;
+		max-width:800px;
+		margin:0;
+	}
+	
+}
