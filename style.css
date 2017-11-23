@@ -1,16 +1,19 @@
 /* Mobile First */
 
 *{
-	font-family:"century gothic";
 	box-sizing:border-box;
 	margin:0px;
 	
 }
 
+body{
+	background-color:black;
+}
+
 header{
 	width:100%;
 	height:300px;
-	background-image: url("bilder//astronaut_moon_cropped.jpg");
+	background-image: url("bilder//header_logga_moon.jpg");
 	background-position: center;
 	
 }
@@ -45,8 +48,9 @@ header{
     background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 1) ); /* Standard syntax */
 	height:80px;
 	list-style:none;
-	padding:20px;
 	text-align:center;
+	line-height:80px;
+	font-family:"Lucida Sans Unicode";
 	
 }
 
@@ -60,15 +64,17 @@ header{
 
 #main{
 	margin:auto;
+	max-width:1000px;
 }
 
 .content{
 	height:500px;
-	background:#3d3d3d;
+	background:black;
 	border:1px solid black;
 	color:#fff;
 	padding:10px;
 	width:100%;
+	border-bottom:2px solid white;
 }
 
 .contentImage{
@@ -76,6 +82,31 @@ header{
 	background-image: url("bilder//content_1_cropped.jpg");
 	background-position: center;
 	margin:auto;
+}
+
+.textBox{
+	padding:20px;
+	max-height:270px;
+	overflow:auto;
+}
+
+.contentHead, .contentText{
+	font-family:"Lucida Sans Unicode";
+	
+}
+
+footer{
+	font-family:"Lucida Sans Unicode";
+	background-color:white;
+}
+
+footer h2{
+	font-weight:bold;
+}
+
+footer h3{
+	color:#262626;
+	
 }
 
 /* PC */
@@ -98,21 +129,18 @@ header{
 	
 }
 
-/* @media(min-width:800px){ */
+@media(min-width:660px){
+	.content{
+		margin:10px;
+		border:2px solid white;
+	}
+}
+
+@media(min-width:800px){
+	.content{
+		margin:3%;
+	}
 	
-	/* #main{ */
-		/* width:90%; */
-		/* min-width:800px; */
-	/* } */
-	
-	/* .content{ */
-		/* min-width:800px; */
-	/* } */
-	
-	/* .contentImage{ */
-		/* width:70%; */
-		/* min-width:750px; */
-	/* } */
-	
-	
-/* } */
+}
+
+@media(min-width:1000px){}
