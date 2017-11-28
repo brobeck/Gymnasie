@@ -23,6 +23,11 @@ header{
 	margin:auto;
 }
 
+#main{
+	margin:auto;
+	max-width:1000px;
+}
+
 .content{
 	height:500px;
 	background:black;
@@ -88,14 +93,14 @@ footer h3{
 
 @media(min-width:660px){
 	.content{
-		margin:10px;
+		margin:10px 0px;
 		border:2px solid white;
 	}
 }
 
 @media(min-width:800px){
 	.content{
-		margin:3%;
+		margin:3% 0px;
 	}
 	
 }
