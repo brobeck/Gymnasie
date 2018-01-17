@@ -23,8 +23,9 @@
 }
 	
 
-#navigation .icon {
+#navigation #menuButton{
     display: none;
+	margin: 0.85em;
 }
 	
 #menuRibbon{
@@ -44,15 +45,33 @@
 }
 
 @media(max-width: 660px) {
-	#navigation li a:not(:first-child){
+	#navigation li:not(:first-child):not(.icon){
 	  display: none;
 	}
 
-  	#navigation a.icon {
+  	#navigation #menuButton{
 		float: right;
 		display: block;
 	}
 }
+	
+/* @media(max-width: 660px) {	 */
+	/* .rectangle.responsive { */
+		/* position: relative; */
+	/* } */
+	
+	/* .rectangle.responsive #menuButton { */
+		/* position: absolute; */
+		/* right: 0; */
+		/* top: 0; */
+	/* } */
+	
+	/* .rectangle.responsive li { */
+		/* float: none; */
+		/* display: block; */
+		/* text-align: left; */
+	/* } */
+/* } */
 
 @media(min-width:1050px){
 	#menuRibbon{

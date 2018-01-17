@@ -28,8 +28,17 @@ header{
 	max-width:1000px;
 }
 
-.content{
+.homeContent{
 	height:500px;
+	background:black;
+	border:1px solid black;
+	color:#fff;
+	padding:10px;
+	width:100%;
+	border-bottom:2px solid white;
+}
+
+.content{
 	background:black;
 	border:1px solid black;
 	color:#fff;
@@ -45,6 +54,10 @@ header{
 	margin:auto;
 }
 
+.textImage{
+	width:100%;
+}
+
 .textBox{
 	padding:20px;
 	max-height:270px;
@@ -52,7 +65,11 @@ header{
 }
 
 .contentHead, .contentText{
-	font-family:"Lucida Sans Unicode";
+	font-family:"Lucida Sans Unicode";	
+}
+
+.contentText{
+	font-size:1.5em;
 	
 }
 
@@ -92,14 +109,14 @@ footer h3{
 }
 
 @media(min-width:660px){
-	.content{
+	.content, .homeContent{
 		margin:10px 0px;
 		border:2px solid white;
 	}
 }
 
 @media(min-width:800px){
-	.content{
+	.content, .homeContent{
 		margin:3% 0px;
 	}
 	

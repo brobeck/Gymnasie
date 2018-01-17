@@ -7,6 +7,7 @@
 	<link rel = "stylesheet" href = "stylesheets//style.css">
 	<link rel = "stylesheet" href = "stylesheets//menu.css">
 	<script src = "jquery.js"></script>
+	<script src = "script.js"></script>
 	
 	
 </head>
@@ -14,17 +15,17 @@
 
 	<header>
 		<nav id = "menuRibbon">
-			<ul id="navigation">
+			<ul class = "navigationClass" id="navigation">
 				<div class="l-triangle-top"></div>
 				<div class="l-triangle-bottom"></div>
 				
-					<div class="rectangle">
-						<li><a href="#">link 1</a></li>
+					<div class="rectangle" id = "rect">
+						<li><a href="svarta_hal.html">Svarta hål</a></li>
 						<li><a href="#">link 2</a></li>
 						<li><a href="#">link 3</a></li>
 						<li><a href="#">link 4</a></li>
 						<li><a href="#">link 5</a></li>
-						<li><a href="#" class = "icon">&#9776;</a></li>
+						<li id = "menuButton"><a href="javascript:void(0);">&#9776;</a></li>
 					</div>
 					
 				<div class="r-triangle-top"></div>
@@ -34,7 +35,7 @@
 	</header>
 
 	<article id = "main">
-		<div class = "content">
+		<div class = "homeContent">
 			<div class = "contentImage"></div>
 			<div class = "textBox">
 				<h3 class = "contentHead">Heading</h3>
@@ -43,7 +44,7 @@
 				</p>
 			</div>
 		</div>
-		<div class = "content">
+		<div class = "homeContent">
 			<div class = "contentImage"></div>
 			<div class = "textBox">
 				<h3 class = "contentHead">Heading</h3>
@@ -52,7 +53,7 @@
 				</p>
 			</div>
 		</div>
-		<div class = "content">
+		<div class = "homeContent">
 			<div class = "contentImage"></div>
 			<div class = "textBox">
 				<h3 class = "contentHead">Heading</h3>
@@ -61,7 +62,7 @@
 				</p>
 			</div>
 		</div>
-		<div class = "content">
+		<div class = "homeContent">
 			<div class = "contentImage"></div>
 			<div class = "textBox">
 				<h3 class = "contentHead">Heading</h3>
@@ -70,7 +71,7 @@
 				</p>
 			</div>
 		</div>
-		<div class = "content">
+		<div class = "homeContent">
 			<div class = "contentImage"></div>
 			<div class = "textBox">
 				<h3 class = "contentHead">Heading</h3>

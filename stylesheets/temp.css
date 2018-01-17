@@ -1,0 +1,24 @@
+#navigation{
+	padding:0;
+}
+
+#navigation li{
+	background-color:white;
+	
+}
+
+#navigation li a{
+	text-decoration: none;
+	color: black;
+	font-size: 1.6em;
+	margin: 0 .5em;
+	text-shadow: 0 2px 1px rgba(0,0,0,0.5);	
+	background-color:white;
+	width:100%;
+	display:block
+}
+
+#navigation li a:hover {
+		margin-left: .7em;
+	background-color:#e6e6e6;
+}
