@@ -1,0 +1,141 @@
+#navigation{
+	padding:0px;
+}
+
+#navigation li {
+		list-style: none;
+		display: block;
+		float: left;
+		margin: 1em;
+}
+
+#navigation li a {
+		text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+		display: block;
+		text-decoration: none;
+		color: black;
+		font-size: 1.6em;
+		margin: 0 .5em;
+}
+
+#navigation li a:hover {
+		margin-top: 2px;
+}
+	
+
+#navigation #menuButton{
+    display: none;
+	margin: 0.85em;
+}
+	
+#menuRibbon{
+	position:absolute;
+	top:184px;
+	width:100%;
+}
+
+.rectangle{
+	background: #fff;
+	height: 62px;
+	width:100%;
+	-moz-box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.55);
+	margin: 3em 0;
+	overflow:hidden;
+}
+
+@media(max-width: 660px) {
+	#navigation li:not(:first-child):not(.icon){
+	  display: none;
+	}
+
+  	#navigation #menuButton{
+		float: right;
+		display: block;
+	}
+}
+	
+/* @media(max-width: 660px) {	 */
+	/* .rectangle.responsive { */
+		/* position: relative; */
+	/* } */
+	
+	/* .rectangle.responsive #menuButton { */
+		/* position: absolute; */
+		/* right: 0; */
+		/* top: 0; */
+	/* } */
+	
+	/* .rectangle.responsive li { */
+		/* float: none; */
+		/* display: block; */
+		/* text-align: left; */
+	/* } */
+/* } */
+
+@media(min-width:1050px){
+	#menuRibbon{
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+	   width:960px;
+	}
+
+	.rectangle {
+	   position:relative;
+	   -webkit-border-radius: 3px;
+	   -moz-border-radius: 3px;
+	   border-radius: 3px;
+	   z-index: 500; /* the stack order: foreground */
+	   overflow:visible;
+	}
+
+	.l-triangle-top {
+	   border-color: #e6e6e6 transparent transparent;
+	   border-style:solid;
+	   border-width:50px;
+	   height:0px;
+	   width:0px;
+	   position: relative;
+	   float: left;
+	   top: 1px;
+	   left: -50px;
+	}
+	 
+	.l-triangle-bottom {
+	   border-color: transparent transparent #e6e6e6;
+	   border-style:solid;
+	   border-width:50px;
+	   height:0px;
+	   width:0px;
+	   position: relative;
+	   float: left;
+	   top: -40px;
+	   left: -150px;
+	}
+
+	.r-triangle-top {
+	   border-color: #e6e6e6 transparent transparent;
+	   border-style:solid;
+	   border-width:50px;
+	   height:0px;
+	   width:0px;
+	   position: relative;
+	   float: right;
+	   right: -45px;
+	   top: -107px;
+	}
+	 
+	.r-triangle-bottom {
+	   border-color: transparent transparent #e6e6e6;
+	   border-style:solid;
+	   border-width:50px;
+	   height:0px;
+	   width:0px;
+	   position: relative;
+	   float: right;
+	   top: -149px;
+	   right: -145px;
+	}
+}
