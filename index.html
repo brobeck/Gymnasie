@@ -4,28 +4,50 @@
 
 	<meta charset= "utf-8">
 	<meta name =  "viewport" content = "width=device-width, initial-scale=1.0">
-	<link rel = "stylesheet" href = "style.css">
-	<script src = "jquery.js"></script>
-	
-	
+	<link rel = "stylesheet" href = "stylesheets//style.css">
+	<link rel = "stylesheet" href = "stylesheets//menu.css">
+	<script src = "script//jquery.js"></script>
+	<script src = "script//script.js"></script>
+	<script src="script//particles.js"></script>
+	<script src="script//planet.js"></script>
 </head>
 <body>
 
-	<header>
+	<header id = "header">
+		<div id="navigation_container">
 
-		<nav id = "menuBar">
-			<ul id = "menu">
-				<li><h1>sak 1</h1></li>
-				<li><h1>sak 2</h1></li>
-				<li><h1>sak 3</h1></li>
-				<li><h1>sak 4</h1></li>
-				<li><h1>sak 5</h1></li>			
-			</ul>
-		</nav>
+			<!-- the left side of the fork effect -->
+			<div class="l-triangle-top"></div>
+			<div class="l-triangle-bottom"></div>
+
+			<!-- the ribbon body -->
+			<div class="rectangle">
+
+				<!-- the navigation links -->
+				<ul id="navigation">
+					<div class="topnav" id="myTopnav">
+						<li><a href="index.html" class="active">Hem</a></li>
+						<li><a href="svarta_hal.html">Svarta hål</a></li>
+						<li><a href="solsystem.html">Solsystemet</a></li>
+						<li><a href="planetarium.html">Planetarium</a></li>
+						<li class="icon"><a href="javascript:void(0);" class="icon" id = "menuButton">&#9776;</a></li>
+					</div>
+				</ul>
+
+				<!-- end the ribbon body -->
+			</div>
+
+			<!-- the right side of the fork effect -->
+			<div class="r-triangle-top"></div>
+			<div class="r-triangle-bottom"></div>
+
+			<!-- end container -->
+		</div>
 	</header>
 
+<div id="particles-js">
 	<article id = "main">
-		<div class = "content">
+		<div class = "homeContent">
 			<div class = "contentImage"></div>
 			<div class = "textBox">
 				<h3 class = "contentHead">Heading</h3>
@@ -34,7 +56,7 @@
 				</p>
 			</div>
 		</div>
-		<div class = "content">
+		<div class = "homeContent">
 			<div class = "contentImage"></div>
 			<div class = "textBox">
 				<h3 class = "contentHead">Heading</h3>
@@ -43,7 +65,7 @@
 				</p>
 			</div>
 		</div>
-		<div class = "content">
+		<div class = "homeContent">
 			<div class = "contentImage"></div>
 			<div class = "textBox">
 				<h3 class = "contentHead">Heading</h3>
@@ -52,7 +74,7 @@
 				</p>
 			</div>
 		</div>
-		<div class = "content">
+		<div class = "homeContent">
 			<div class = "contentImage"></div>
 			<div class = "textBox">
 				<h3 class = "contentHead">Heading</h3>
@@ -61,7 +83,7 @@
 				</p>
 			</div>
 		</div>
-		<div class = "content">
+		<div class = "homeContent">
 			<div class = "contentImage"></div>
 			<div class = "textBox">
 				<h3 class = "contentHead">Heading</h3>
@@ -70,17 +92,22 @@
 				</p>
 			</div>
 		</div>
-		
+
 	</article>
-	
+</div>
+
 	<footer>
 		<h2>Gymnasieprojekt av Axel Brobeck</h2>
 		<h3>TE15B 2017-18</h3>
 	</footer>
-	
-	
-	
-	
+
+	<script>
+	particlesJS.load('particles-js', 'assets/particles.json', function() {
+	console.log('particles.json loaded...');
+	});
+	</script>
+
+
 
 </body>
 </html>

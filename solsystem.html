@@ -1,0 +1,105 @@
+<!doctype HTML>
+<html>
+<head>
+
+	<meta charset= "utf-8">
+	<meta name =  "viewport" content = "width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href = "stylesheets//style.css">
+	<link rel = "stylesheet" href = "stylesheets//menu.css">
+  <link rel = "stylesheet" href = "stylesheets//planet_style.css">
+	<script src = "script//jquery.js"></script>
+	<script src = "script//script.js"></script>
+	<script src="script//particles.js"></script>
+</head>
+<body>
+
+	<header id = "header">
+		<div id="navigation_container">
+
+			<!-- the left side of the fork effect -->
+			<div class="l-triangle-top"></div>
+			<div class="l-triangle-bottom"></div>
+
+			<!-- the ribbon body -->
+			<div class="rectangle">
+
+				<!-- the navigation links -->
+				<ul id="navigation">
+					<div class="topnav" id="myTopnav">
+						<li><a href="index.html">Hem</a></li>
+						<li><a href="svarta_hal.html">Svarta hål</a></li>
+						<li><a href="solsystem.html" class = "active">Solsystemet</a></li>
+						<li><a href="planetarium.html">Planetarium</a></li>
+						<li class="icon"><a href="javascript:void(0);" class="icon" id = "menuButton">&#9776;</a></li>
+					</div>
+				</ul>
+
+				<!-- end the ribbon body -->
+			</div>
+
+			<!-- the right side of the fork effect -->
+			<div class="r-triangle-top"></div>
+			<div class="r-triangle-bottom"></div>
+
+			<!-- end container -->
+		</div>
+	</header>
+
+<div id="particles-js">
+  <article id="main">
+    <div class = "content">
+      <figure class = "planetFigure">
+				<img id = "mercuryImage" src="bilder//planets//merkurius.svg" alt="Merkurius">
+				<figcaption class = "planetCaption">Merkurius</figcaption>
+			</figure>
+			<div id="mercuryInfo">
+				info om merkurius
+			</div>
+      <figure class = "planetFigure">
+				<img id = "venusImage" src="bilder//planets//venus.svg" alt="Venus">
+				<figcaption class = "planetCaption">Venus</figcaption>
+			</figure>
+      <figure class = "planetFigure">
+				<img id = "earthImage" src="bilder//planets//jorden.svg" alt="Jorden">
+				<figcaption class = "planetCaption">Jorden</figcaption>
+			</figure>
+      <figure class = "planetFigure">
+				<img id = "marsImage" src="bilder//planets//mars.svg" alt="Mars">
+				<figcaption class = "planetCaption">Mars</figcaption>
+			</figure>
+      <figure class = "planetFigure">
+				<img id = "jupiterImage" src="bilder//planets//jupiter.svg" alt="Jupiter">
+				<figcaption class = "planetCaption">Jupiter</figcaption>
+			</figure>
+      <figure class = "planetFigure">
+				<img id = "saturnImage" src="bilder//planets//saturnus.svg" alt="Saturnus">
+				<figcaption class = "planetCaption">Saturnus</figcaption>
+			</figure>
+      <figure class = "planetFigure">
+				<img id = "uranusImage" src="bilder//planets//uranus.svg" alt="Uranus">
+				<figcaption class = "planetCaption">Uranus</figcaption>
+			</figure>
+      <figure class = "planetFigure">
+				<img id = "neptuneImage" src="bilder//planets//neptunus.svg" alt="Neptunus">
+				<figcaption class = "planetCaption">Neptunus</figcaption>
+			</figure>
+      <figure class = "planetFigure">
+				<img id = "plutoImage" src="bilder//planets//pluto.svg" alt="Pluto">
+				<figcaption class = "planetCaption">Pluto</figcaption>
+			</figure>
+    </div>
+  </article>
+</div>
+
+  <footer>
+		<h2>Gymnasieprojekt av Axel Brobeck</h2>
+		<h3>TE15B 2017-18</h3>
+	</footer>
+<script>
+particlesJS.load('particles-js', 'assets/particles.json', function() {
+console.log('particles.json loaded...');
+});
+</script>
+<script src = "script//planet.js"></script>
+</body>
+</html>

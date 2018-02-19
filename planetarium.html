@@ -1,0 +1,67 @@
+<!doctype HTML>
+<html>
+<head>
+
+	<meta charset= "utf-8">
+	<meta name =  "viewport" content = "width=device-width, initial-scale=1.0">
+	<link rel = "stylesheet" href = "stylesheets//style.css">
+	<link rel = "stylesheet" href = "stylesheets//menu.css">
+	<script src = "script//jquery.js"></script>
+	<script src = "script//script.js"></script>
+	<script src="script//particles.js"></script>
+	<script src="script//planet.js"></script>
+  <script src="script//virtualsky//virtualsky.min.js" type="text/javascript"></script>
+  <script src="script//virtualsky//virtualsky-planets.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+  <header id = "header">
+    <div id="navigation_container">
+
+      <!-- the left side of the fork effect -->
+      <div class="l-triangle-top"></div>
+      <div class="l-triangle-bottom"></div>
+
+      <!-- the ribbon body -->
+      <div class="rectangle">
+
+        <!-- the navigation links -->
+        <ul id="navigation">
+          <div class="topnav" id="myTopnav">
+            <li><a href="index.html">Hem</a></li>
+            <li><a href="svarta_hal.html">Svarta hål</a></li>
+            <li><a href="solsystem.html">Solsystemet</a></li>
+            <li><a href="planetarium.html" class="active">Planetarium</a></li>
+            <li class="icon"><a href="javascript:void(0);" class="icon" id = "menuButton">&#9776;</a></li>
+          </div>
+        </ul>
+
+        <!-- end the ribbon body -->
+      </div>
+
+      <!-- the right side of the fork effect -->
+      <div class="r-triangle-top"></div>
+      <div class="r-triangle-bottom"></div>
+
+      <!-- end container -->
+    </div>
+  </header>
+
+<div id="particles-js">
+	<article id="main">
+    <div id="planetarium"></div>
+	</article>
+</div>
+
+	<footer>
+		<h2>Gymnasieprojekt av Axel Brobeck</h2>
+		<h3>TE15B 2017-18</h3>
+	</footer>
+
+	<script>
+	particlesJS.load('particles-js', 'assets/particles.json', function() {
+	console.log('particles.json loaded...');
+	});
+	</script>
+</body>
+</html>

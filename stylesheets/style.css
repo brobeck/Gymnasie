@@ -1,0 +1,141 @@
+/* Mobile First */
+
+*{
+	box-sizing:border-box;
+	margin:0px;
+}
+
+body{
+	background-color:black;
+}
+
+header{
+	width:100%;
+	height:300px;
+	background-image: url("bilder//header_logga_moon.jpg");
+	background-position: center;
+
+}
+
+#particles-js{
+    width: 100%;
+		background-color: #000;
+}
+
+#logga{
+	height:50%;
+	margin:auto;
+}
+
+#main{
+	max-width:1000px;
+	display: table-cell;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.homeContent{
+	height:500px;
+	background:black;
+	border:1px solid black;
+	color:#fff;
+	padding:10px;
+	width:100%;
+	border-bottom:2px solid white;
+}
+
+.content{
+	background:black;
+	border:1px solid black;
+	color:#fff;
+	padding:10px;
+	width:100%;
+	border-bottom:2px solid white;
+}
+
+.contentImage{
+	height:200px;
+	background-image: url("bilder//content_1_cropped.jpg");
+	background-position: center;
+	margin:auto;
+}
+
+.textImage{
+	width:100%;
+}
+
+.textBox{
+	padding:20px;
+	max-height:270px;
+	overflow:auto;
+}
+
+.contentHead, .contentText{
+	font-family:"Lucida Sans Unicode";
+}
+
+.contentText{
+	font-size:1.5em;
+
+}
+
+footer{
+	font-family:"Lucida Sans Unicode";
+	background-color:white;
+	padding:5px;
+	display:none;
+}
+
+footer h2{
+	font-weight:bold;
+}
+
+footer h3{
+	color:#262626;
+
+}
+
+ #planetarium {
+	 width: 100%;
+	 height: 500px;
+	 border: 2px solid white;
+	 margin:10px auto;
+ }
+
+/* PC */
+@media(min-width:600px){
+	#main{
+		width:90%;
+		min-width:600px;
+	}
+
+	.content{
+		min-width:600px;
+	}
+
+	.contentImage{
+		width:70%;
+		min-width:550px;
+	}
+
+
+
+}
+
+@media(min-width:660px){
+	.content, .homeContent{
+		margin:10px 0px;
+		border:2px solid white;
+	}
+}
+
+@media(min-width:800px){
+	.content, .homeContent{
+		margin:3% 0px;
+	}
+
+}
+
+@media(min-width:1000px){}
