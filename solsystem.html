@@ -1,15 +1,15 @@
 <!doctype HTML>
 <html>
 <head>
-
 	<meta charset= "utf-8">
 	<meta name =  "viewport" content = "width=device-width, initial-scale=1.0">
-	<link rel = "stylesheet" href = "stylesheets//style.css">
-	<link rel = "stylesheet" href = "stylesheets//menu.css">
-  <link rel = "stylesheet" href = "stylesheets//planet_style.css">
-	<script src = "script//jquery.js"></script>
-	<script src = "script//script.js"></script>
-	<script src="script//particles.js"></script>
+	<link rel = "stylesheet" href = "stylesheets/style.css">
+	<link rel = "stylesheet" href = "stylesheets/menu.css">
+  <link rel = "stylesheet" href = "stylesheets/planet_style.css">
+	<script src = "script/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	<script src = "script/script.js"></script>
+	<script src="script/particles.js"></script>
 </head>
 <body>
 
@@ -47,46 +47,16 @@
 
 <div id="particles-js">
   <article id="main">
-    <div class = "content">
-      <figure class = "planetFigure">
-				<img id = "mercuryImage" src="bilder//planets//merkurius.svg" alt="Merkurius">
-				<figcaption class = "planetCaption">Merkurius</figcaption>
-			</figure>
-			<div id="mercuryInfo">
-				info om merkurius
-			</div>
-      <figure class = "planetFigure">
-				<img id = "venusImage" src="bilder//planets//venus.svg" alt="Venus">
-				<figcaption class = "planetCaption">Venus</figcaption>
-			</figure>
-      <figure class = "planetFigure">
-				<img id = "earthImage" src="bilder//planets//jorden.svg" alt="Jorden">
-				<figcaption class = "planetCaption">Jorden</figcaption>
-			</figure>
-      <figure class = "planetFigure">
-				<img id = "marsImage" src="bilder//planets//mars.svg" alt="Mars">
-				<figcaption class = "planetCaption">Mars</figcaption>
-			</figure>
-      <figure class = "planetFigure">
-				<img id = "jupiterImage" src="bilder//planets//jupiter.svg" alt="Jupiter">
-				<figcaption class = "planetCaption">Jupiter</figcaption>
-			</figure>
-      <figure class = "planetFigure">
-				<img id = "saturnImage" src="bilder//planets//saturnus.svg" alt="Saturnus">
-				<figcaption class = "planetCaption">Saturnus</figcaption>
-			</figure>
-      <figure class = "planetFigure">
-				<img id = "uranusImage" src="bilder//planets//uranus.svg" alt="Uranus">
-				<figcaption class = "planetCaption">Uranus</figcaption>
-			</figure>
-      <figure class = "planetFigure">
-				<img id = "neptuneImage" src="bilder//planets//neptunus.svg" alt="Neptunus">
-				<figcaption class = "planetCaption">Neptunus</figcaption>
-			</figure>
-      <figure class = "planetFigure">
-				<img id = "plutoImage" src="bilder//planets//pluto.svg" alt="Pluto">
-				<figcaption class = "planetCaption">Pluto</figcaption>
-			</figure>
+		<div id="buttonContainer">
+	    <small>Sortera efter: </small>
+	    <select id="sortBySelect">
+	      <option value="distance">avstånd till solen</option>
+	      <option value="size">storlek</option>
+	      <option value="name">alfabetiskt</option>
+	    </select>
+	    <button class="buttons" id="btn">Sortera</button>
+	  </div>
+    <div id="solsysContent">
     </div>
   </article>
 </div>

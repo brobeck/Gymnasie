@@ -1,9 +1,18 @@
-.planetFigure{
-width: 70%;
-margin: 100px auto;
+#solsysContent {
+	background:black;
+	border:1px solid black;
+	color:#fff;
+	padding:10px;
+	width:100%;
+	border-bottom:2px solid white;
 }
 
-.planetCaption{
+.planet {
+  width: 70%;
+  margin: 100px auto;
+}
+
+.planetCaption {
   text-align: center;
   margin-top: 10px;
   font-size: 4vw;
